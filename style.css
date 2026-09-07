@@ -1403,3 +1403,236 @@ textarea {
     }
 
    }
+
+/* =========================================
+   ACCESSIBILITY FEATURES SECTION
+========================================= */
+
+.features-section {
+    padding: 70px 20px;
+}
+
+
+/* SECTION HEADING */
+
+.section-heading {
+    max-width: 750px;
+    margin: 0 auto 45px;
+    text-align: left;
+}
+
+.section-label {
+    color: #2563eb;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.section-heading h2 {
+    color: #172033;
+    font-size: clamp(2rem, 5vw, 3rem);
+    line-height: 1.2;
+    margin: 0 0 15px;
+}
+
+.section-heading p {
+    color: #64748b;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin: 0;
+}
+
+
+/* =========================================
+   FEATURE GRID
+========================================= */
+
+.feature-grid {
+    max-width: 1100px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 30px;
+}
+
+
+/* =========================================
+   FEATURE CARD
+========================================= */
+
+.feature-card {
+    background: #ffffff;
+
+    border: 1px solid #e2e8f0;
+
+    border-radius: 24px;
+
+    padding: 55px 48px;
+
+    min-height: 380px;
+
+    box-shadow:
+        0 8px 25px rgba(15, 23, 42, 0.04);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        border-color 0.25s ease;
+}
+
+
+/* CARD HOVER */
+
+.feature-card:hover {
+    transform: translateY(-6px);
+
+    border-color: #cbd5e1;
+
+    box-shadow:
+        0 15px 35px rgba(15, 23, 42, 0.08);
+}
+
+
+/* =========================================
+   ICON
+========================================= */
+
+.feature-icon {
+    font-size: 3.5rem;
+
+    line-height: 1;
+
+    margin-bottom: 55px;
+}
+
+
+/* =========================================
+   CARD TITLE
+========================================= */
+
+.feature-card h3 {
+    color: #172033;
+
+    font-size: 2rem;
+
+    line-height: 1.2;
+
+    margin: 0 0 25px;
+}
+
+
+/* =========================================
+   CARD DESCRIPTION
+========================================= */
+
+.feature-card p {
+    color: #64748b;
+
+    font-size: 1.15rem;
+
+    line-height: 1.8;
+
+    margin: 0;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+
+    .feature-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .feature-card {
+        padding: 45px 35px;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 650px) {
+
+    .features-section {
+        padding: 50px 20px;
+    }
+
+    .section-heading {
+        margin-bottom: 30px;
+    }
+
+    .section-heading h2 {
+        font-size: 2.2rem;
+    }
+
+    .section-heading p {
+        font-size: 1rem;
+    }
+
+    .feature-grid {
+        grid-template-columns: 1fr;
+
+        gap: 25px;
+    }
+
+    .feature-card {
+        min-height: auto;
+
+        padding: 50px 48px;
+
+        border-radius: 22px;
+    }
+
+    .feature-icon {
+        font-size: 3.2rem;
+
+        margin-bottom: 45px;
+    }
+
+    .feature-card h3 {
+        font-size: 2rem;
+
+        margin-bottom: 20px;
+    }
+
+    .feature-card p {
+        font-size: 1.1rem;
+
+        line-height: 1.75;
+    }
+
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 400px) {
+
+    .features-section {
+        padding: 40px 15px;
+    }
+
+    .feature-card {
+        padding: 40px 28px;
+    }
+
+    .feature-card h3 {
+        font-size: 1.8rem;
+    }
+
+    .feature-card p {
+        font-size: 1rem;
+    }
+
+   }
+
